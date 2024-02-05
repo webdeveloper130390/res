@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -32,10 +31,19 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
         </div>
+        </div>
+        </nav>
+        <div class="container">
+      
+            <div class="modam">
+              <h1 class="modal__des">Modal</h1>
+            <button onclick="fnOpen()" class="a__btn">Open</button> 
+            </div>
+          <div class="dark">
+          </div>
     </header>
-        <section class="project">
+    <section class="project">
         <div class="container">
             <ul class="project__list">
                 <li class="project__item">
@@ -59,6 +67,26 @@
             </ul>
         </div>
     </section>
+    <div class="container">
+        <div class="modal ">
+         <div class="modal__header">
+          <h2 class="modal__title">Modal title</h2>
+          
+          <button onclick="fnClose()" class="modal__close">X</button>
+         </div>
+          <div class="modal__body">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            ...
+          </div>
+          <div class="modal__footer">
+            <button onclick="fnClose()" class="modal__close">Close</button>
+            <button>Save</button>
+          </div>
+        </div>
+      </div>
+      <div onclick="fnClose()" class="modal__shadow">
+    
+      </div>
 </body>
-
+<script src="main.js"></script>
 </html>

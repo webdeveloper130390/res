@@ -80,3 +80,97 @@ a{
         justify-content: center;
     }
 }
+.modal {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    transition: all ease 0.5s;
+    position: fixed;
+    background-color:white;
+  }
+  
+  .modal__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    button{
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+      justify-content: center;
+    }
+  }
+  .modal__footer{
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    button{
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      justify-content: center;
+    }
+    button:nth-child(1){
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+  
+    }
+  }
+  .open__modal{
+    top: 300px;
+    left: 40%;
+    transform: translateX(0px);
+  
+   
+    transition: all ease 0.5s;
+  }
+  .modal__shadow{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000002a;
+    display: none;
+  }
+  .scroll__none{
+    overflow-y: hidden;
+    padding-right: 17px;
+  }
+  .dark{
+    display: flex;
+    justify-content: end;
+  }
+  .modam{
+    justify-content: start;
+  
+  }
+  .dark__mode{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 3px solid red;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .day__mode{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .modal__des{
+    color: white;
+  }
